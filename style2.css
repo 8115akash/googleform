@@ -1,0 +1,19 @@
+.box2:hover,
+.box3:hover,
+.box4:hover,
+.box5:hover,
+.box6:hover,
+.box7:hover,
+.box8:hover,
+.box9:hover,
+.box10:hover {
+  border-color: red;
+}
+
+input[type="text"] {
+  
+}
+
+input[type="text"]:hover {
+  border-color: red;
+}
