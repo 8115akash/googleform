@@ -1,0 +1,306 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f0ebf8;
+  font-family: Roboto, sans-serif;
+
+}
+
+.box {
+  background-color: #f0ebf8;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  font-family: Roboto, sans-serif;
+  margin: 0px;
+  padding-top: 1rem;
+  font-size: 16px;
+
+}
+
+.hr {
+  border-top: 1px solid #dadce0;
+  position: absolute;
+  width: 40vw;
+  margin: auto;
+  margin-left: -1rem;
+}
+
+.box1 {
+  border: 1px solid #dadce0;
+  background-color: white;
+  border-top: 8px solid rgb(103, 58, 183);
+  border-radius: 8px;
+  height: fit-content;
+  width: 40vw;
+  margin: auto;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  font-size: 16px;
+}
+
+.box1 p {
+  color: #666666;
+}
+
+.star,
+#sp {
+  color: red;
+}
+
+@media (min-width: 768px) and (max-width: 1268px) {
+
+  .box1,
+  .box2,
+  .box3,
+  .box4,
+  .box5,
+  .box6,
+  .box7,
+  .box8,
+  .box9,
+  .box10 {
+    max-width: 85vw;
+    padding: 1.5rem;
+  }
+
+  .hr {
+    margin-left: -1.5rem;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #2e2eff;
+}
+
+@media (max-width: 768px) {
+
+  .box1,
+  .box2,
+  .box3,
+  .box4,
+  .box5,
+  .box6,
+  .box7,
+  .box8,
+  .box9,
+  .box10 {
+    min-width: 85dvw;
+  }
+
+  .hr {
+    width: 85vw;
+  }
+
+  .box8 .scale {
+    display: flex;
+    width: 80dvw;
+  }
+
+  .box8 .scale .tick {
+    padding: 0.1rem;
+  }
+}
+
+
+
+.box2,
+.box3,
+.box4,
+.box5,
+.box6,
+.box7,
+.box8,
+.box9,
+.box10 {
+  border: 1px solid #dadce0;
+  background-color: white;
+  border-radius: 8px;
+  /* height: fit-content; */
+  height: max-content;
+  width: 40vw;
+  margin: auto;
+  margin-bottom: 1rem;
+  padding: 2rem;
+  font-size: 16px;
+  font-size: 20px;
+  align-items: center;
+  text-align: start;
+}
+
+
+
+
+.box2 ol,
+.box3 ol {
+  list-style: none;
+}
+
+.box2 ol li input,
+.box3 ol li input {
+  height: 20px;
+  width: 20px;
+
+}
+
+.box2 ol li input:hover,
+.box3 ol li input:hover {
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  height: 20px;
+  width: 20px;
+}
+
+/* Styling the input element */
+input[type="text"] {
+  width: 80%;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+/* Applying styles when the input is focused */
+input[type="text"]:focus {
+  /* border-color: #007bff; */
+  border: 2px solid #f60101;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+#fruits,
+#fruits>option {
+  outline: none;
+  border: 1px solid #dadce0;
+  background-color: white;
+  padding: 0.5rem;
+  height: 50px;
+  width: 150px;
+  cursor: pointer;
+
+}
+
+
+
+.box8 .scale {
+  display: flex;
+  width: 35dvw;
+  margin: 0px;
+}
+
+.box8 .scale .tick {
+  padding: 0.4rem;
+  margin-left: 0px;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2px;
+}
+
+.grid-item {
+  background-color: #ffffff;
+  padding: 2px;
+  margin: 2px;
+  text-align: center;
+}
+
+.grid-5,
+.grid-9,
+.grid-13 {
+  grid-column: span 4;
+  margin: 1px;
+  background-color: #f0f0f0;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.grid-5,
+.grid-9,
+.grid-13 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2px;
+}
+
+.footer {
+  border: none;
+  padding: 0px;
+  background-color: transparent;
+  display: flex;
+}
+
+button[type="submit"],
+button[type="reset"] {
+  border: none;
+  background-color: transparent;
+  margin: auto;
+}
+
+.button {
+  margin: auto;
+  margin-left: 0px;
+  border: 1px solid blue;
+  background-color: rgb(108, 108, 249);
+  border-radius: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  cursor: pointer;
+}
+
+.reset button {
+  color: blue;
+  cursor: pointer;
+}
+
+#page {
+  margin: auto;
+  display: flex;
+}
+
+#page div:nth-child(1) {
+  /* position: absolute; */
+  border: 1px solid rgb(1, 148, 19);
+  background-color: green;
+  border-radius: 20px;
+  height: 8px;
+  width: 100px;
+  margin: auto;
+}
+
+.reset {
+  margin: auto;
+  margin-right: 0px;
+}
+
+.foot {
+  border: none;
+  background-color: transparent;
+  font-size: 15px;
+}
+
+.foot h1 {
+  text-align: center;
+  color: #666666;
+}
